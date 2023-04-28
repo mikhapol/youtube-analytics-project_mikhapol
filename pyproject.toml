@@ -10,6 +10,7 @@ packages = [{include = "youtube_analytics_project_mikhapol"}]
 python = "^3.11"
 google-api-python-client = "^2.86.0"
 isodate = "^0.6.1"
+accessify = "^0.3.1"
 
 
 [tool.poetry.group.dev.dependencies]
