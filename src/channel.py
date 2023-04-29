@@ -2,7 +2,7 @@ import json
 import os
 from googleapiclient.discovery import build
 
-api_key: str = os.getenv('YouTube_Data_API_v3')
+api_key: str = os.getenv('YT_API_KEY')
 
 
 class Channel:
