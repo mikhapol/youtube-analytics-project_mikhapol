@@ -18,10 +18,9 @@ class Channel:
         self.subscriberCount = channel["items"][0]["statistics"]["subscriberCount"]
         self.video_count = channel["items"][0]["statistics"]["videoCount"]
         self.viewCount = channel["items"][0]["statistics"]["viewCount"]
-        self.channel = channel["items"][0]["id"]
 
     def __str__(self):
-        return f'{self.title} (https://www.youtube.com/channel/{self.channel})'
+        return f'{self.title} (https://www.youtube.com/channel/{self.__channel_id})'
 
     def __add__(self, other):
         return int(self.subscriberCount) + int(other.subscriberCount)
